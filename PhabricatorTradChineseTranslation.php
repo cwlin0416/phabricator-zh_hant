@@ -20,6 +20,7 @@ final class PhabricatorTradChineseTranslation
    * "Unbreak Now!" | 緊急!		| 工作優先權狀態, 需要立即處理的工作
    * Dashboard		| 資訊看板	|
    * Commit			| 提交		| 版本管理系統的一個提出修訂的動作
+   * Image Macro, Meme | 貼圖 | Image Macro 指的是加上文字的貼圖，Meme 是在網路上流行/散佈的一個點子
    */
   protected function getTranslations() {
     return array (
