@@ -51,7 +51,9 @@ chmod 755 install_ubuntu.sh
 * `/usr/share/php/phabricator/`
 
 
-### 設定 Apache 服務
+### 設定服務
+https://secure.phabricator.com/book/phabricator/article/configuration_guide/
+#### Apache
 ###### 加入設定檔
 以 FreeBSD 為例，可加入 `/usr/local/etc/apache24/Includes/phabricator.conf` 檔案如下:
 ```
@@ -83,12 +85,35 @@ chmod 755 install_ubuntu.sh
 
 `service apache2 restart`
 
+接下來便可進入 `phabricator.mycompany.com` 依提示完成剩下的安裝作業
+
 ##安裝 Phabricator 語系
+
+###### 安裝語系檔
 將 phabricator-zh_hant 資料夾放置於 `./phabricator/src/extensions/` 目錄底下，以 FreeBSD 為例:
 ```
 cd /usr/local/lib/php/phabricator/src/extensions/
 git clone https://github.com/cwlin0416/phabricator-zh_hant.git
 ```
+
+###### 修正語系支援
+注意! 由於 Phabricator 尚未完整支援多國語系，若有額外的需要修改
+
+`/usr/local/lib/php/libphutil/src/internationalization/PhutilTranslator.php` 
+
+加入繁體中文的語系方可正常使用
+
+```
+@@ -190,6 +190,7 @@ final class PhutilTranslator extends Phobject {
+         return $plural;
+ 
+       case 'ko_KR':
++      case 'zh_Hant':
+         list($singular, $plural) = $translations;
+         if ($variant == 1) {
+           return $singular;
+```
+
 
 ##製作 Phabricator 語系
 
