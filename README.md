@@ -120,7 +120,7 @@ git clone https://github.com/cwlin0416/phabricator-zh_hant.git
 ##製作 Phabricator 語系
 
 ### 產生語系資源
-請使用以指令擷取目前程式碼中可翻譯的字串
+請使用指令擷取目前程式碼中可翻譯的字串
 `./phabricator/bin/i18n extract ./phabricator/src > extractStrings`
 擷取完之後將該字串依語系擴充套件的 API 文件放到新語系類別的 getTranslations() 函數中
 
