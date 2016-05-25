@@ -99,3 +99,25 @@ git clone https://github.com/cwlin0416/phabricator-zh_hant.git
 
 ### 建立語系擴充套件
 https://secure.phabricator.com/book/phabcontrib/article/internationalization/
+
+
+## 術語表
+詞                       | 翻譯          | 說明 
+------------------------ | ------------- | -------------
+Review                   | 審查          |
+Audit                    | 稽查          |
+Assign                   | 分配          |
+Repository               | 檔案庫        |
+Revision                 | 修訂          | 與版本管理的修訂不太一樣，是指 Differential 審查程式碼的申請項目
+Needs Triage             | 需要分級      | 新增完工作的預設狀態, 代表讓工作需要先區分優先權等級以便後續動作
+Conpherence              | 會議          | 會議，為 Conference 的協音
+Room                     | 會議室        | 由 Conpherence 所使用，因此譯為會議室
+Column                   | 欄            | 用在工作看板 (Workboard) 的欄
+"Unbreak Now!"           | 緊急!         | 工作優先權狀態, 需要立即處理的工作
+Dashboard                | 資訊看板      |
+Commit                   | 提交          | 版本管理系統的一個提出修訂的動作
+Image Macro, Meme        | 貼圖          | Image Macro 指的是加上文字的貼圖，Meme 是在網路上流行/散佈的一個點子
+Credential               | 憑證          | 密碼憑證
+Policy                   | 原則          | 存取原則，用來規範存取的方式
+Mock                     | 模型          | 畫面模型 
+Patch                    | 修補          | 修補檔 
