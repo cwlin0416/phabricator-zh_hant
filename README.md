@@ -19,27 +19,30 @@ https://secure.phabricator.com/book/phabricator/article/installation_guide/
 * 網域名稱 (如 `phabricator.mycompany.com`)
 
 ### FreeBSD ###
-#### 使用 Ports 安裝
+###### 使用 Ports 安裝
 `cd /usr/ports/devel/phabricator/ && make install clean`
 
-#### 安裝並啟動 Phabricator Daemon 服務
-`echo phd_enable="YES" >> /etc/rc.conf`
-`service phd start`
+###### 安裝並啟動 Phabricator Daemon 服務
+```
+echo phd_enable="YES" >> /etc/rc.conf
+service phd start
+```
 
-#### 安裝完的程式分別有 arcanist, libphutil, phabricator 位於
+###### 安裝完的程式分別有 arcanist, libphutil, phabricator 位於
 * `/usr/local/lib/php/arcanist/`
 * `/usr/local/lib/php/libphutil/`
 * `/usr/local/lib/php/phabricator/`
 
 ### Ubuntu ###
-#### 使用 Shell Script 安裝
+###### 使用 Shell Script 安裝
 下載官方提供的 [install_ubuntu.sh](https://secure.phabricator.com/diffusion/P/browse/master/scripts/install/install_ubuntu.sh) 到欲安裝的目錄 (例: `/usr/share/php/``) 並執行
+```
+cd /usr/share/php/ && wget https://secure.phabricator.com/diffusion/P/browse/master/scripts/install/install_ubuntu.sh
+chmod 755 install_ubuntu.sh
+./install_ubuntu.sh
+```
 
-`cd /usr/share/php/ && wget https://secure.phabricator.com/diffusion/P/browse/master/scripts/install/install_ubuntu.sh`
-`chmod 755 install_ubuntu.sh`
-`./install_ubuntu.sh`
-
-#### 啟動 Phabricator Daemon 服務
+###### 啟動 Phabricator Daemon 服務
 `/usr/share/php/phabricator/bin/phd start`
 
 #### 安裝完的程式分別有 arcanist, libphutil, phabricator 位於
@@ -49,6 +52,7 @@ https://secure.phabricator.com/book/phabricator/article/installation_guide/
 
 
 ### 設定 Apache 服務
+###### 加入設定檔
 以 FreeBSD 為例，可加入 `/usr/local/etc/apache24/Includes/phabricator.conf` 檔案如下:
 ```
 <VirtualHost *>
@@ -70,11 +74,21 @@ https://secure.phabricator.com/book/phabricator/article/installation_guide/
   RewriteRule ^(.*)$          /index.php?__path__=$1  [B,L,QSA]
 </VirtualHost>
 ```
+###### 重啟 Apache
+於 FreeBSD
+
+`service apache24 restart`
+
+於 Ubuntu 
+
+`service apache2 restart`
 
 ##安裝 Phabricator 語系
 將 phabricator-zh_hant 資料夾放置於 `./phabricator/src/extensions/` 目錄底下，以 FreeBSD 為例:
-`cd /usr/local/lib/php/phabricator/src/extensions/`
-`git clone https://github.com/cwlin0416/phabricator-zh_hant.git`
+```
+cd /usr/local/lib/php/phabricator/src/extensions/
+git clone https://github.com/cwlin0416/phabricator-zh_hant.git
+```
 
 ##製作 Phabricator 語系
 
