@@ -1,6 +1,7 @@
 # Phabricator 繁體中文語系
 
 Phabricator 官方網站 http://phabricator.org/
+
 ![Screenshot](https://raw.githubusercontent.com/cwlin0416/phabricator-zh_hant/master/screenshot.png)
 
 ##安裝 Phabricator
