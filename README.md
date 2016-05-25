@@ -51,7 +51,9 @@ chmod 755 install_ubuntu.sh
 * `/usr/share/php/phabricator/`
 
 
-### 設定 Apache 服務
+### 設定服務
+https://secure.phabricator.com/book/phabricator/article/configuration_guide/
+#### Apache
 ###### 加入設定檔
 以 FreeBSD 為例，可加入 `/usr/local/etc/apache24/Includes/phabricator.conf` 檔案如下:
 ```
@@ -82,6 +84,8 @@ chmod 755 install_ubuntu.sh
 於 Ubuntu 
 
 `service apache2 restart`
+
+接下來便可進入 `phabricator.mycompany.com` 依提示完成剩下的安裝作業
 
 ##安裝 Phabricator 語系
 
