@@ -127,14 +127,12 @@ https://secure.phabricator.com/book/phabricator/article/upgrading/
  * 停止網頁伺服器 (`service apache24 stop`)
  * 停止 Daemon (`phabricator/bin/phd stop`)
  * 更新原始碼
-```
-phabricator/ $ git checkout stable
-phabricator/ $ git pull
-arcanist/ $ git checkout stable
-arcanist/ $ git pull
-libphutil/ $ git checkout stable
-libphutil/ $ git pull
-```
+   * `phabricator/ $ git checkout stable`
+   * `phabricator/ $ git pull`
+   * `arcanist/ $ git checkout stable`
+   * `arcanist/ $ git pull`
+   * `libphutil/ $ git checkout stable`
+   * `libphutil/ $ git pull`
  * 升級資料庫 (`phabricator/bin/phd start`)
  * 重啟網頁伺服器 (`service apache24 start`)
 
