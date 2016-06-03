@@ -119,6 +119,24 @@ git clone https://github.com/cwlin0416/phabricator-zh_hant.git
            return $singular;
 ```
 
+##升級 Phabricator
+https://secure.phabricator.com/book/phabricator/article/upgrading/
+
+升級 Phabricator 必須使用 Github 上的檔案庫, 因此 FreeBSD 採用 Ports 安裝的使用者需自行將安裝的 phabricator/, arcanist/, libphutil/ 三個目錄替換為 git 的版本。
+
+ * 停止網頁伺服器 (`service apache24 stop`)
+ * 停止 Daemon (`phabricator/bin/phd stop`)
+ * 更新原始碼
+```
+phabricator/ $ git checkout stable
+phabricator/ $ git pull
+arcanist/ $ git checkout stable
+arcanist/ $ git pull
+libphutil/ $ git checkout stable
+libphutil/ $ git pull
+```
+ * 升級資料庫 (`phabricator/bin/phd start`)
+ * 重啟網頁伺服器 (`service apache24 start`)
 
 ##製作 Phabricator 語系
 
