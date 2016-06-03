@@ -99,7 +99,10 @@ git clone https://github.com/cwlin0416/phabricator-zh_hant.git
 ```
 
 ###### 修正語系支援
-注意! 由於 Phabricator 尚未完整支援多國語系，若有額外的需要修改
+目前 github 上的最新版本已無須再套用這個修補
+切換語系後若出現錯誤訊息可以有兩種選擇: 1. 自行修改, 2. 更新到最新版
+
+舊版 Phabricator 需額外修改
 
 `/usr/local/lib/php/libphutil/src/internationalization/PhutilTranslator.php` 
 
