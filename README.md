@@ -161,9 +161,17 @@ Room                     | 會議室        | 由 Conpherence 所使用，因此
 Column                   | 欄            | 用在工作看板 (Workboard) 的欄
 "Unbreak Now!"           | 緊急!         | 工作優先權狀態, 需要立即處理的工作
 Dashboard                | 資訊看板      |
+Panel                    | 面板          | 資訊看板的面板
 Commit                   | 提交          | 版本管理系統的一個提出修訂的動作
 Image Macro, Meme        | 貼圖          | Image Macro 指的是加上文字的貼圖，Meme 是在網路上流行/散佈的一個點子
 Credential               | 憑證          | 密碼憑證
 Policy                   | 原則          | 存取原則，用來規範存取的方式
 Mock                     | 模型          | 畫面模型 
 Patch                    | 修補          | 修補檔 
+Provider, Auth Provider  | 提供者        | 認証提供者
+Pin, Pinned              | 釘選          | 釘選應用程式
+Filetree                 | 檔案樹        |
+Tags                     | 標籤          | 專案標籤
+Token                    | 獎勵, Token   | 頒發獎勵, API Token
+Multi-Factor auth        | 多重認証      | 
+
