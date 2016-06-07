@@ -133,7 +133,8 @@ https://secure.phabricator.com/book/phabricator/article/upgrading/
    * `arcanist/ $ git pull`
    * `libphutil/ $ git checkout stable`
    * `libphutil/ $ git pull`
- * 升級資料庫 (`phabricator/bin/phd start`)
+ * 升級資料庫 (`phabricator/bin/storage upgrade`)
+ * 重啟 Daemon (`phabricator/bin/phd start`)
  * 重啟網頁伺服器 (`service apache24 start`)
 
 ##製作 Phabricator 語系
