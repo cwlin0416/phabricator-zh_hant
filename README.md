@@ -3,6 +3,11 @@
 Phabricator 官方網站 http://phabricator.org/
 
 ![Screenshot](https://raw.githubusercontent.com/cwlin0416/phabricator-zh_hant/master/screenshot.png)
+![Differential](https://raw.githubusercontent.com/cwlin0416/phabricator-zh_hant/master/Differential.png)
+![Diffusion](https://raw.githubusercontent.com/cwlin0416/phabricator-zh_hant/master/Diffusion.png)
+![Diffusion2](https://raw.githubusercontent.com/cwlin0416/phabricator-zh_hant/master/Diffusion2.png)
+![Maniphest](https://raw.githubusercontent.com/cwlin0416/phabricator-zh_hant/master/Maniphest.png)
+![Project](https://raw.githubusercontent.com/cwlin0416/phabricator-zh_hant/master/Project.png)
 
 ##安裝 Phabricator
 https://secure.phabricator.com/book/phabricator/article/installation_guide/
