@@ -175,4 +175,26 @@ Filetree                 | 檔案樹        |
 Tags                     | 標籤          | 專案標籤
 Token                    | 獎勵, Token   | 頒發獎勵, API Token
 Multi-Factor auth        | 多重認証      | 
+Schema                   | 架構          | 資料庫架構
+Poll                     | 調查          | 決策調查
+Staging Area             | 臨時區        | 整合測試與編譯測試用的臨時區
+Build, Build Plan        | 建置          | 建置計劃
+File Storage             | 檔案儲存庫    |
+Transforms               | 轉換          |
+Package                  | 套件          | 擁有者(Owner)管理以套件 (Package) 為單位
+Contributor              | 貢獻者        | 協議貢獻者
+Signed                   | 簽署          | 簽署協議 
+Flag, Flagged            | 旗幟, 旗標    | n. 旗幟, v. 旗標
+Initiatives              | 提案          | Fund Initiatives
+Blog                     | 部落格        | Phame Blog
+Post                     | 文章          | Phame Post
+Paste                    | 剪貼簿        |
+Passphrase               | 暗號          |
+Development, Production  | 開發/線上模式 | 
+Automation Blueprint     | 自動化藍圖    |
+Badge                    | 徽章          |
+Revision Blocking, Block | 阻擋          | 阻擋, 無法繼續審查
+Commandeer               | 徵用, 徵用修訂|
+Resign                   | 放棄          | 放棄審查
+Parent Task/Subtask      | 父工作/子工作 | 工作
 
