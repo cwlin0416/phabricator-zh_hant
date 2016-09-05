@@ -1410,16 +1410,22 @@ Note you\'ll have to restart the daemons for this to take effect.' => NULL,
 You can configure settings for your account by clicking the wrench icon in the main menu bar, or visiting the **[[ %s | Settings Application ]]** directly.' => NULL,
   '=== Adjust Account Settings ===
 
-You\'ve adjusted at least one setting on your account. To make more adjustments, visit the **[[ %s | Settings Application ]]**.' => NULL,
+You\'ve adjusted at least one setting on your account. To make more adjustments, visit the **[[ %s | Settings Application ]]**.' => '=== 調整帳號設定 ===
+
+您已調整了您的帳號中至少一項設定。要做更多的調整可至 **[[ %s | 設定應用程式 ]]**。',
   '=== Configure Phabricator Settings ===
 
 Many aspects of Phabricator are configurable. To explore and adjust settings, use the **[[ %s | Config Application ]]**.' => NULL,
   '=== Configure Phabricator Settings ===
 
-You\'ve configured at least one setting from the web interface. To configure more settings later, use the **[[ %s | Config Application ]]**.' => NULL,
+You\'ve configured at least one setting from the web interface. To configure more settings later, use the **[[ %s | Config Application ]]**.' => '=== 設定 Phabricator 設定項目 ===
+
+您已從網頁介面設定了至少一項設定項目。往後要設定更多的設定項目可使用 **[[ %s | Config 應用程式 ]]**。',
   '=== Customize Home Page ===
 
-When you\'re done setting things up, you can create a custom dashboard and install it. Your dashboard will replace this welcome screen on the Phabricator home page. Dashboards can show users the information that\'s most important to your organization. You can configure them to display things like: a custom welcome message, a feed of recent activity, or a list of open tasks, waiting reviews, recent commits, and so on. After you install a default dashboard, it will replace this page. You can find this page later by visiting the **Config** application, under **Welcome Page**. To get started building a dashboard, use the **[[ %s | Dashboards Application ]]**. ' => NULL,
+When you\'re done setting things up, you can create a custom dashboard and install it. Your dashboard will replace this welcome screen on the Phabricator home page. Dashboards can show users the information that\'s most important to your organization. You can configure them to display things like: a custom welcome message, a feed of recent activity, or a list of open tasks, waiting reviews, recent commits, and so on. After you install a default dashboard, it will replace this page. You can find this page later by visiting the **Config** application, under **Welcome Page**. To get started building a dashboard, use the **[[ %s | Dashboards Application ]]**. ' => '=== 自訂首頁 ===
+
+當您完成了以上的設定，您便可以建立一個自訂的資訊面板並安裝該面板。您的資訊面板會取代這個 Phabricator 首頁的歡迎畫面，資訊面板可以將您的組織中最重要的資訊顯示給所有使用者。您可以設定資訊面板顯示如: 一個自訂的歡迎訊息、一個最近活動的清單或一個未完成工作的清單、等候中的審查、最近提交...等等，完成之後您可以安裝該面板為預設的資訊面板，便可以取代這個頁面。往後您可以到 **Config** 應用程式中的 **歡迎頁面** 找到這頁。要開始建立一個資訊面板可使用 **[[ %s | 資訊面板應用程式 ]]**。',
   '=== Customize Home Page ===
 
 You\'ve installed a default dashboard to replace this welcome screen on the home page. You can still visit the welcome screen here at any time if you have steps you want to complete later, or if you feel lonely. If you\'ve changed your mind about the dashboard you installed, you can install a different default dashboard with the **[[ %s | Dashboards Application ]]**.' => NULL,
@@ -1427,23 +1433,39 @@ You\'ve installed a default dashboard to replace this welcome screen on the home
 
 Phabricator is a large suite of applications that work together to help you develop software, manage tasks, and communicate. A few of the most commonly used applications are pinned to the left navigation bar by default.
 
-To explore all of the Phabricator applications, adjust settings, or uninstall applications you don\'t plan to use, visit the **[[ %s | Applications Application ]]**. You can also click the **Applications** button in the left navigation menu, or search for an application by name in the main menu bar. ' => NULL,
+To explore all of the Phabricator applications, adjust settings, or uninstall applications you don\'t plan to use, visit the **[[ %s | Applications Application ]]**. You can also click the **Applications** button in the left navigation menu, or search for an application by name in the main menu bar. ' => '=== 探索應用程式 ===
+
+Phabricator 是一大套應用程式一起運作來協助您開發軟體、管理工作與溝通。有一小部份最常用的應用程式預設已經釘選到左方的導覽列。
+
+要探索所有 Phabricator 的應用程式、調整設定或解除安裝您不計劃使用的應用程式請至 **[[ %s | 應用程式應用程式 ]]**。您也可以點選於左方導覽選單的 **應用程式** 按鈕或在主選單列用名稱搜尋應用程式。',
   '=== Install Phabricator ===
 
-You have successfully installed Phabricator. This screen will guide you through configuration and orientation. These steps are optional, and you can go through them in any order. If you want to get back to this screen later on, you can find it in the **Config** application under **Welcome Screen**.' => NULL,
+You have successfully installed Phabricator. This screen will guide you through configuration and orientation. These steps are optional, and you can go through them in any order. If you want to get back to this screen later on, you can find it in the **Config** application under **Welcome Screen**.' => '=== 安裝 Phabricator ===
+
+您已成功安裝了 Phabricator。此畫面會帶領你設定與使用，以下幾個步驟均為選擇性的，您可以用任何順序完成。若您想要在稍後返回這個畫面，您可以在 **Config** 應用程式中的 **歡迎畫面** 找到。',
   '=== Login and Registration ===
 
-You haven\'t configured any authentication providers yet. Authentication providers allow users to register accounts and log in to Phabricator. You can configure Phabricator to accept credentials like username and password, LDAP, or Google OAuth. You can configure authentication using the **[[ %s | Auth Application ]]**.' => NULL,
+You haven\'t configured any authentication providers yet. Authentication providers allow users to register accounts and log in to Phabricator. You can configure Phabricator to accept credentials like username and password, LDAP, or Google OAuth. You can configure authentication using the **[[ %s | Auth Application ]]**.' => '=== 登入與註冊 ===
+
+You haven\'t configured any authentication providers yet. Authentication providers allow users to register accounts and log in to Phabricator. You can configure Phabricator to accept credentials like username and password, LDAP, or Google OAuth. You can configure authentication using the **[[ %s | Auth Application ]]**.',
   '=== Login and Registration ===
 
-You\'ve configured at least one authentication provider, so users can register or log in. To configure more providers or adjust settings, use the **[[ %s | Auth Application ]]**.' => NULL,
+You\'ve configured at least one authentication provider, so users can register or log in. To configure more providers or adjust settings, use the **[[ %s | Auth Application ]]**.' => '=== 登入與註冊 ===
+
+您已設定了至少一個認証提供者，所以使用者已可以註冊或登入。要設定更多提供者或調整設定可以使用 **[[ %s | 認証應用程式 ]]**。',
   '=== Quick Start: Bugs and Tasks ===
 
 Track bugs and tasks in Phabricator with **[[ %s | Maniphest ]]**. Users in all roles can use Maniphest to manage current and planned work and to track bugs and issues. To get started with bugs and tasks:
 
   - **[[ %s | Create a Task ]]**
   - **[[ %s | View All Tasks ]]**
-' => NULL,
+' => '=== 快速入門: 問題與工作 ===
+
+在 Phabricator 可使用 **[[ %s | Maniphest ]]** 來追蹤問題與工作。所有身份的使用者都可以使用 Maniphest 來管理目前及計劃中的工作並且追蹤錯誤與問題的處理狀況。要開始處理問題與工作:
+
+  - **[[ %s | 建立一個工作 ]]**
+  - **[[ %s | 檢視所有工作 ]]**
+',
   '=== Quick Start: Code Review ===
 
 Review code with **[[ %s | Differential ]]**. Engineers can use Differential to share, review, and approve changes to source code. To get started with code review:
@@ -1454,13 +1476,28 @@ Review code with **[[ %s | Differential ]]**. Engineers can use Differential to 
 For more information, see these articles in the documentation:
 
   - **[[ %s | Differential User Guide ]]**, for a general overview     of Differential.
-  - **[[ %s | User Guide: Review vs Audit ]]**, for a discussion     of different code review workflows.' => NULL,
+  - **[[ %s | User Guide: Review vs Audit ]]**, for a discussion     of different code review workflows.' => '=== 快速入門: 程式碼審查 ===
+
+使用 **[[ %s | Differential ]]** 來審查程式碼，工程師可以使用 Differential 來分享、審查並核准對原始碼的更改。要開始使用程式碼審查:
+
+  - **[[ %s | 建立一個修訂 ]]** //(可從指令列複製並貼上 diff 到網頁介面來試試審查。)//
+  - **[[ %s | 檢視所有修訂 ]]**
+
+要取得更多資訊，請參考以下說明文件中的文章:
+
+  - **[[ %s | Differential 使用者指南 ]]**, 有關 Differential 的簡介。
+  - **[[ %s | 使用者指南: 審查與稽查 ]]**, 探討有關兩種不同的程式碼審查流程。',
   '=== Quick Start: Design Review ===
 
 Review proposed designs with **[[ %s | Pholio ]]**. Designers can use Pholio to share images of what they\'re working on and show off things they\'ve made. To get started with design review:
 
   - **[[ %s | Create a Mock ]]**
-  - **[[ %s | View All Mocks ]]**' => NULL,
+  - **[[ %s | View All Mocks ]]**' => '=== 快速入門: 設計審查 ===
+
+使用 **[[ %s | Pholio ]]** 可以審查設計提案。設計師可以使用 Pholio 分享他們正在設計的圖片並展示所有他們的設計。要開始使用設計審查:
+
+  - **[[ %s | 建立模型 ]]**
+  - **[[ %s | 檢視所有模型 ]]**',
   '=== Quick Start: Repositories ===
 
 Manage and browse source code repositories with **[[ %s | Diffusion ]]**. Engineers can use Diffusion to browse and audit source code. You can configure Phabricator to host repositories, or have it track existing repositories hosted elsewhere (like GitHub, Bitbucket, or an internal server). To get started with repositories:
@@ -1473,15 +1510,29 @@ For more information, see these articles in the documentation:
   - **[[ %s | Diffusion User Guide ]]**, for a general overview of     Diffusion.
   - **[[ %s | Diffusion User Guide: Repository Hosting ]]**,     for instructions on configuring repository hosting.
 
-Phabricator supports Git, Mercurial and Subversion.' => NULL,
+Phabricator supports Git, Mercurial and Subversion.' => '=== 快速入門: 檔案庫 ===
+
+使用 **[[ %s | Diffusion ]]** 可以管理與瀏覽原始碼。工程師可以使用 Diffusion 來瀏覽並稽查原始碼，您可以設定 Phabricator 來代管檔案庫，或者讓 Phabricator 追蹤一個由其他地方代管的既有檔案庫 (例如 GitHub, Bitbucket, 或者內部伺服器)。要開始使用檔案庫:
+
+  - **[[ %s | 建立新檔案庫 ]]**
+  - **[[ %s | 檢視所有檔案庫 ]]**
+
+要取得更多資訊，可參考以下說明文件中的文章:
+
+  - **[[ %s | Diffusion 使用者指南 ]]**, 有關 Diffusion 的簡介。
+  - **[[ %s | Diffusion 使用者指南: 檔案庫代管 ]]**, 有關設定檔案庫代管的操作說明。
+
+Phabricator 支援 Git, Mercurial 以及 Subversion。',
   '=== Resolve Setup Issues ===
 
-You have some unresolved setup issues to take care of. Click the link in the yellow banner at the top of the screen to see them, or find them in the **Config** application under **[[ %s | Setup Issues ]]**. Although most setup issues should be resolved, sometimes an issue is not applicable to an install. If you don\'t intend to fix a setup issue (or don\'t want to fix it for now), you can use the "Ignore" action to mark it as something you don\'t plan to deal with.' => NULL,
+You have some unresolved setup issues to take care of. Click the link in the yellow banner at the top of the screen to see them, or find them in the **Config** application under **[[ %s | Setup Issues ]]**. Although most setup issues should be resolved, sometimes an issue is not applicable to an install. If you don\'t intend to fix a setup issue (or don\'t want to fix it for now), you can use the "Ignore" action to mark it as something you don\'t plan to deal with.' => '=== 解決安裝問題 ===
+
+您有一些未解決的安裝問題要處理。請點選螢幕上方的黃色橫幅中的連結來查看，或者在 **Config** 應用式中的 **[[ %s | 安裝問題 ]]** 找到。雖然大部份的安裝問題應該要解決，但是可能會有一些無法在您安裝的版本上解決的問題，若您並不打算修復某個安裝問題 (或者想要稍後再解決)，您可以將您不打算處理的問題以 "忽略" 動作來標記。',
   '=== Resolve Setup Issues ===
 
 You\'ve resolved (or ignored) all outstanding setup issues. You can review issues in the **Config** application, under **[[ %s | Setup Issues ]]**.' => NULL,
   '=Explore Phabricator' => '=探索 Phabricator',
-  '=Quick Start Guide' => '=快速開始指南',
+  '=Quick Start Guide' => '=快速入門指南',
   '=Setup and Configuration' => '=安裝與設定',
   '?' => NULL,
   'A Controller must implement %s before you can invoke %s or %s.' => NULL,
@@ -5074,7 +5125,7 @@ For more detailed output, you can also run manual builds from the command line:
   'Example' => '範例',
   'Example Branch' => NULL,
   'Example: %s' => '例如: %s',
-  'Example: %s%sFor LDAPS, use: %s' => NULL,
+  'Example: %s%sFor LDAPS, use: %s' => '例如: %s%s針對 LDAPS 可使用: %s',
   'Examples' => '範例',
   'Excel Export Not Configured' => NULL,
   'Excel format object not found.' => NULL,
@@ -6051,7 +6102,7 @@ When this query is actually shown in the control, it will look more like this:
   'Install Certificate' => NULL,
   'Install Dashboard' => '安裝資訊看板',
   'Install Instructions' => '安裝指示',
-  'Install Phabricator' => NULL,
+  'Install Phabricator' => '安裝 Phabricator',
   'Install Pygments to Improve Syntax Highlighting' => '安裝 Pygments 來改進語法標示',
   'Install applications which are still under development.' => NULL,
   'Install these %d PHP extension(s):' => NULL,
@@ -14519,7 +14570,7 @@ You can force daemons to start anyway with %s.' => NULL,
   '**Choose the pronoun you prefer:**' => '**選擇您偏好的代名詞:**',
   '12-hour (2:34 PM)' => '12 小時制 (2:34 PM)',
   '24-hour (14:34)' => '24 小時制 (14:34)',
-  '=Quick Start Guides' => '=快速開始指南',
+  '=Quick Start Guides' => '=快速入門指南',
   'Account Information' => '帳號資訊',
   'Action Required' => '需要動作',
   'Activate Repository?' => '啟用檔案庫?',
