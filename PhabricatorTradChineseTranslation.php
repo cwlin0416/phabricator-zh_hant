@@ -445,6 +445,7 @@ After completing configuration, copy the **Client ID** and **Client Secret** to 
   '%s created dashboard %s.' => '%s 建立了資訊看板 %s。',
   '%s created dashboard panel %s.' => '%s 建立了資訊看板面板 %s。',
   '%s created subtask %s.' => '%s 建立了子工作 %s。',
+  '%s created the room %s.' => NULL,
   '%s created this OAuth application.' => NULL,
   '%s created this URL.' => '%s 建立了這個 URL。',
   '%s created this account.' => '%s 建立了這個帳號。',
@@ -503,6 +504,8 @@ After completing configuration, copy the **Client ID** and **Client Secret** to 
   '%s deleted %s.' => NULL,
   '%s deleted the property "%s".' => NULL,
   '%s deleted the room name "%s".' => NULL,
+  '%s deleted the room topic "%s"' => NULL,
+  '%s deleted the topic in %s' => NULL,
   '%s deleted this configuration entry (again?).' => NULL,
   '%s deleted this configuration entry.' => NULL,
   '%s deleted this document.' => NULL,
@@ -983,6 +986,8 @@ After completing configuration, copy the **Client ID** and **Client Secret** to 
   '%s set the repository to import only "%s".' => NULL,
   '%s set the short name of this repository to "%s".' => NULL,
   '%s set the subtitle for %s.' => NULL,
+  '%s set the topic of %s to "%s".' => NULL,
+  '%s set the topic of this room to "%s".' => NULL,
   '%s set the username for this credential to "%s".' => NULL,
   '%s set this blog\'s header image to %s.' => NULL,
   '%s set this blog\'s parent domain to "%s".' => NULL,
@@ -1113,6 +1118,7 @@ After completing configuration, copy the **Client ID** and **Client Secret** to 
   '%s updated the repository for %s from %s to %s.' => NULL,
   '%s updated the revert plan for %s.' => NULL,
   '%s updated the revert plan for this revision.' => NULL,
+  '%s updated the room image for %s.' => NULL,
   '%s updated the room image.' => NULL,
   '%s updated the secret for this credential.' => NULL,
   '%s updated the subtitle for %s.' => NULL,
@@ -1405,139 +1411,11 @@ repository reparse --all TEST --owners --min-date "03/31/2013"' => NULL,
 Configure how to record Revisions on JIRA tasks.
 
 Note you\'ll have to restart the daemons for this to take effect.' => NULL,
-  '=== Adjust Account Settings ===
-
-You can configure settings for your account by clicking the wrench icon in the main menu bar, or visiting the **[[ %s | Settings Application ]]** directly.' => NULL,
-  '=== Adjust Account Settings ===
-
-You\'ve adjusted at least one setting on your account. To make more adjustments, visit the **[[ %s | Settings Application ]]**.' => '=== 調整帳號設定 ===
-
-您已調整了您的帳號中至少一項設定。要做更多的調整可至 **[[ %s | 設定應用程式 ]]**。',
-  '=== Configure Phabricator Settings ===
-
-Many aspects of Phabricator are configurable. To explore and adjust settings, use the **[[ %s | Config Application ]]**.' => NULL,
-  '=== Configure Phabricator Settings ===
-
-You\'ve configured at least one setting from the web interface. To configure more settings later, use the **[[ %s | Config Application ]]**.' => '=== 設定 Phabricator 設定項目 ===
-
-您已從網頁介面設定了至少一項設定項目。往後要設定更多的設定項目可使用 **[[ %s | Config 應用程式 ]]**。',
-  '=== Customize Home Page ===
-
-When you\'re done setting things up, you can create a custom dashboard and install it. Your dashboard will replace this welcome screen on the Phabricator home page. Dashboards can show users the information that\'s most important to your organization. You can configure them to display things like: a custom welcome message, a feed of recent activity, or a list of open tasks, waiting reviews, recent commits, and so on. After you install a default dashboard, it will replace this page. You can find this page later by visiting the **Config** application, under **Welcome Page**. To get started building a dashboard, use the **[[ %s | Dashboards Application ]]**. ' => '=== 自訂首頁 ===
-
-當您完成了以上的設定，您便可以建立一個自訂的資訊面板並安裝該面板。您的資訊面板會取代這個 Phabricator 首頁的歡迎畫面，資訊面板可以將您的組織中最重要的資訊顯示給所有使用者。您可以設定資訊面板顯示如: 一個自訂的歡迎訊息、一個最近活動的清單或一個未完成工作的清單、等候中的審查、最近提交...等等，完成之後您可以安裝該面板為預設的資訊面板，便可以取代這個頁面。往後您可以到 **Config** 應用程式中的 **歡迎頁面** 找到這頁。要開始建立一個資訊面板可使用 **[[ %s | 資訊面板應用程式 ]]**。',
-  '=== Customize Home Page ===
-
-You\'ve installed a default dashboard to replace this welcome screen on the home page. You can still visit the welcome screen here at any time if you have steps you want to complete later, or if you feel lonely. If you\'ve changed your mind about the dashboard you installed, you can install a different default dashboard with the **[[ %s | Dashboards Application ]]**.' => NULL,
-  '=== Explore Applications ===
-
-Phabricator is a large suite of applications that work together to help you develop software, manage tasks, and communicate. A few of the most commonly used applications are pinned to the left navigation bar by default.
-
-To explore all of the Phabricator applications, adjust settings, or uninstall applications you don\'t plan to use, visit the **[[ %s | Applications Application ]]**. You can also click the **Applications** button in the left navigation menu, or search for an application by name in the main menu bar. ' => '=== 探索應用程式 ===
-
-Phabricator 是一大套應用程式一起運作來協助您開發軟體、管理工作與溝通。有一小部份最常用的應用程式預設已經釘選到左方的導覽列。
-
-要探索所有 Phabricator 的應用程式、調整設定或解除安裝您不計劃使用的應用程式請至 **[[ %s | 應用程式應用程式 ]]**。您也可以點選於左方導覽選單的 **應用程式** 按鈕或在主選單列用名稱搜尋應用程式。',
-  '=== Install Phabricator ===
-
-You have successfully installed Phabricator. This screen will guide you through configuration and orientation. These steps are optional, and you can go through them in any order. If you want to get back to this screen later on, you can find it in the **Config** application under **Welcome Screen**.' => '=== 安裝 Phabricator ===
-
-您已成功安裝了 Phabricator。此畫面會帶領你設定與使用，以下幾個步驟均為選擇性的，您可以用任何順序完成。若您想要在稍後返回這個畫面，您可以在 **Config** 應用程式中的 **歡迎畫面** 找到。',
-  '=== Login and Registration ===
-
-You haven\'t configured any authentication providers yet. Authentication providers allow users to register accounts and log in to Phabricator. You can configure Phabricator to accept credentials like username and password, LDAP, or Google OAuth. You can configure authentication using the **[[ %s | Auth Application ]]**.' => '=== 登入與註冊 ===
-
-You haven\'t configured any authentication providers yet. Authentication providers allow users to register accounts and log in to Phabricator. You can configure Phabricator to accept credentials like username and password, LDAP, or Google OAuth. You can configure authentication using the **[[ %s | Auth Application ]]**.',
-  '=== Login and Registration ===
-
-You\'ve configured at least one authentication provider, so users can register or log in. To configure more providers or adjust settings, use the **[[ %s | Auth Application ]]**.' => '=== 登入與註冊 ===
-
-您已設定了至少一個認証提供者，所以使用者已可以註冊或登入。要設定更多提供者或調整設定可以使用 **[[ %s | 認証應用程式 ]]**。',
-  '=== Quick Start: Bugs and Tasks ===
-
-Track bugs and tasks in Phabricator with **[[ %s | Maniphest ]]**. Users in all roles can use Maniphest to manage current and planned work and to track bugs and issues. To get started with bugs and tasks:
-
-  - **[[ %s | Create a Task ]]**
-  - **[[ %s | View All Tasks ]]**
-' => '=== 快速入門: 問題與工作 ===
-
-在 Phabricator 可使用 **[[ %s | Maniphest ]]** 來追蹤問題與工作。所有身份的使用者都可以使用 Maniphest 來管理目前及計劃中的工作並且追蹤錯誤與問題的處理狀況。要開始處理問題與工作:
-
-  - **[[ %s | 建立一個工作 ]]**
-  - **[[ %s | 檢視所有工作 ]]**
-',
-  '=== Quick Start: Code Review ===
-
-Review code with **[[ %s | Differential ]]**. Engineers can use Differential to share, review, and approve changes to source code. To get started with code review:
-
-  - **[[ %s | Create a Revision ]]** //(Copy and paste a diff from     the command line into the web UI to quickly get a feel for     review.)//
-  - **[[ %s | View All Revisions ]]**
-
-For more information, see these articles in the documentation:
-
-  - **[[ %s | Differential User Guide ]]**, for a general overview     of Differential.
-  - **[[ %s | User Guide: Review vs Audit ]]**, for a discussion     of different code review workflows.' => '=== 快速入門: 程式碼審查 ===
-
-使用 **[[ %s | Differential ]]** 來審查程式碼，工程師可以使用 Differential 來分享、審查並核准對原始碼的更改。要開始使用程式碼審查:
-
-  - **[[ %s | 建立一個修訂 ]]** //(可從指令列複製並貼上 diff 到網頁介面來試試審查。)//
-  - **[[ %s | 檢視所有修訂 ]]**
-
-要取得更多資訊，請參考以下說明文件中的文章:
-
-  - **[[ %s | Differential 使用者指南 ]]**, 有關 Differential 的簡介。
-  - **[[ %s | 使用者指南: 審查與稽查 ]]**, 探討有關兩種不同的程式碼審查流程。',
-  '=== Quick Start: Design Review ===
-
-Review proposed designs with **[[ %s | Pholio ]]**. Designers can use Pholio to share images of what they\'re working on and show off things they\'ve made. To get started with design review:
-
-  - **[[ %s | Create a Mock ]]**
-  - **[[ %s | View All Mocks ]]**' => '=== 快速入門: 設計審查 ===
-
-使用 **[[ %s | Pholio ]]** 可以審查設計提案。設計師可以使用 Pholio 分享他們正在設計的圖片並展示所有他們的設計。要開始使用設計審查:
-
-  - **[[ %s | 建立模型 ]]**
-  - **[[ %s | 檢視所有模型 ]]**',
-  '=== Quick Start: Repositories ===
-
-Manage and browse source code repositories with **[[ %s | Diffusion ]]**. Engineers can use Diffusion to browse and audit source code. You can configure Phabricator to host repositories, or have it track existing repositories hosted elsewhere (like GitHub, Bitbucket, or an internal server). To get started with repositories:
-
-  - **[[ %s | Create a New Repository ]]**
-  - **[[ %s | View All Repositories ]]**
-
-For more information, see these articles in the documentation:
-
-  - **[[ %s | Diffusion User Guide ]]**, for a general overview of     Diffusion.
-  - **[[ %s | Diffusion User Guide: Repository Hosting ]]**,     for instructions on configuring repository hosting.
-
-Phabricator supports Git, Mercurial and Subversion.' => '=== 快速入門: 檔案庫 ===
-
-使用 **[[ %s | Diffusion ]]** 可以管理與瀏覽原始碼。工程師可以使用 Diffusion 來瀏覽並稽查原始碼，您可以設定 Phabricator 來代管檔案庫，或者讓 Phabricator 追蹤一個由其他地方代管的既有檔案庫 (例如 GitHub, Bitbucket, 或者內部伺服器)。要開始使用檔案庫:
-
-  - **[[ %s | 建立新檔案庫 ]]**
-  - **[[ %s | 檢視所有檔案庫 ]]**
-
-要取得更多資訊，可參考以下說明文件中的文章:
-
-  - **[[ %s | Diffusion 使用者指南 ]]**, 有關 Diffusion 的簡介。
-  - **[[ %s | Diffusion 使用者指南: 檔案庫代管 ]]**, 有關設定檔案庫代管的操作說明。
-
-Phabricator 支援 Git, Mercurial 以及 Subversion。',
-  '=== Resolve Setup Issues ===
-
-You have some unresolved setup issues to take care of. Click the link in the yellow banner at the top of the screen to see them, or find them in the **Config** application under **[[ %s | Setup Issues ]]**. Although most setup issues should be resolved, sometimes an issue is not applicable to an install. If you don\'t intend to fix a setup issue (or don\'t want to fix it for now), you can use the "Ignore" action to mark it as something you don\'t plan to deal with.' => '=== 解決安裝問題 ===
-
-您有一些未解決的安裝問題要處理。請點選螢幕上方的黃色橫幅中的連結來查看，或者在 **Config** 應用式中的 **[[ %s | 安裝問題 ]]** 找到。雖然大部份的安裝問題應該要解決，但是可能會有一些無法在您安裝的版本上解決的問題，若您並不打算修復某個安裝問題 (或者想要稍後再解決)，您可以將您不打算處理的問題以 "忽略" 動作來標記。',
-  '=== Resolve Setup Issues ===
-
-You\'ve resolved (or ignored) all outstanding setup issues. You can review issues in the **Config** application, under **[[ %s | Setup Issues ]]**.' => NULL,
-  '=Explore Phabricator' => '=探索 Phabricator',
-  '=Quick Start Guide' => '=快速入門指南',
-  '=Setup and Configuration' => '=安裝與設定',
   '?' => NULL,
   'A Controller must implement %s before you can invoke %s or %s.' => NULL,
   'A PHID.' => NULL,
   'A Standard Palette of Colors for use.' => NULL,
+  'A Troublesome Encounter!' => NULL,
   'A URL\'s details change.' => 'URL 的詳細資訊變更。',
   'A URL-encoded string.' => NULL,
   'A Very Very Very Very Very Very Very Very Very Long Property Label' => NULL,
@@ -2338,6 +2216,7 @@ You can choose which priority is the default for newly created tasks with `%s`.'
   'Apply patch again?' => NULL,
   'Apply remaining actions?' => '套用剩下的動作?',
   'Apply these changes?' => NULL,
+  'Apply these schema adjustments?' => NULL,
   'Apply transactions to create a new Owners package or edit an existing one.' => NULL,
   'Apply transactions to create a new badge or edit an existing one.' => NULL,
   'Apply transactions to create a new dashboard panel or edit an existing one.' => NULL,
@@ -2352,6 +2231,7 @@ You can choose which priority is the default for newly created tasks with `%s`.'
   'Apply transactions to create a new version or edit an existing one.' => NULL,
   'Applying patch \'%s\'...' => NULL,
   'Applying plan %s to new buildable %s...' => NULL,
+  'Applying schema adjustments...' => NULL,
   'Approval (Multiple Choice)' => '同意制 (多選)',
   'Approval Queue' => '等待審核',
   'Approve' => '核准',
@@ -3485,8 +3365,8 @@ You should configure a CDN or alternate file domain to mitigate this risk. Confi
   'Complete' => NULL,
   'Completed' => '已完成',
   'Completed Chunks' => NULL,
+  'Completed applying all schema adjustments.' => NULL,
   'Completed at %s' => NULL,
-  'Completed fixing all schema issues.' => NULL,
   'Completed generation of "%s".' => NULL,
   'Completely Break Phabricator' => NULL,
   'Compose Image' => NULL,
@@ -3561,7 +3441,6 @@ Phabricator
   'Configure **Repository Automation** to allow Phabricator to write to this repository.
 
 IMPORTANT: This feature is new, experimental, and not supported. Use it at your own risk.' => NULL,
-  'Configure Applications' => '設定應用程式',
   'Configure Badges Forms' => '設定徽章表單',
   'Configure Blog Post Forms' => '設定部落格文章表單',
   'Configure Calendar Event Forms' => '設定 Calendar 事件表單',
@@ -3668,10 +3547,13 @@ The keys in this map are viewable MIME types; the values are the MIME types they
   'Conpherence Room' => '會議室',
   'Conpherence Rooms' => '會議室',
   'Conpherence Threads' => NULL,
+  'Conpherence Widget Pane Visible' => NULL,
+  'Conpherence lets you create public or private rooms to communicate with others.' => NULL,
   'Console' => '控制台',
   'Constant' => '常數',
   'Constant identifying the garbage collector to run.' => NULL,
   'Constant identifying the garbage collector.' => NULL,
+  'Constraint "%s" is not a valid constraint for this query.' => NULL,
   'Construction of a DateTime() with epoch \'%s\' raised an exception.' => NULL,
   'Consumed' => NULL,
   'Consumer Key' => NULL,
@@ -3929,6 +3811,7 @@ The keys in this map are viewable MIME types; the values are the MIME types they
   'Create or edit blogs in Phame.' => NULL,
   'Create or modify a flag.' => NULL,
   'Create reusable, memorable, shorter URLs for easy accessibility.' => NULL,
+  'Create some work for the interns in Maniphest.' => NULL,
   'Create this Document' => NULL,
   'Created' => '建立於',
   'Created After' => '建立於之後',
@@ -4571,6 +4454,9 @@ These tattered edges are an expected consequence of destroying objects, and the 
   'Doorkeeper' => NULL,
   'Doorkeeper worker \'%s\' is not enabled.' => NULL,
   'Doubloon' => NULL,
+  'Down' => NULL,
+  'Down Left' => NULL,
+  'Down Right' => NULL,
   'Download' => NULL,
   'Download %s Profile' => NULL,
   'Download Contents as ZIP' => NULL,
@@ -4635,6 +4521,7 @@ These tattered edges are an expected consequence of destroying objects, and the 
   'Duration' => '期間',
   'Dust Detector' => NULL,
   'EDIT DETAILS' => NULL,
+  'EDIT NOTES' => NULL,
   'EMAIL PREFERENCES' => '郵件偏好',
   'EMAIL PREFERENCES FOR THIS ROOM' => NULL,
   'ERROR:' => NULL,
@@ -5093,6 +4980,7 @@ For more detailed output, you can also run manual builds from the command line:
   'Errors' => '錯誤',
   'Errors while creating fragment' => NULL,
   'Errors while updating fragment' => NULL,
+  'Escape' => NULL,
   'Escape Route' => NULL,
   'Estimated Hours' => NULL,
   'Estimated number of hours this will take.' => NULL,
@@ -5248,8 +5136,10 @@ For more detailed output, you can also run manual builds from the command line:
   'Explicit exclude excludes recipients.' => NULL,
   'Explicitly update the builds for __buildable__.' => NULL,
   'Exploration Only' => NULL,
+  'Explore Applications' => NULL,
   'Explore More Applications' => '探索更多應用',
   'Export Tasks to Excel' => NULL,
+  'Export as .ics' => NULL,
   'Export to Excel' => '匯出為 Excel',
   'Expression "%s" is not a valid regular expression. Note that you must include delimiters.' => NULL,
   'Extended Policy with Cycle' => NULL,
@@ -5326,6 +5216,7 @@ For more detailed output, you can also run manual builds from the command line:
   'Failed to load content file!' => NULL,
   'Failed to load credential "%s"!' => NULL,
   'Failed to load diff ("%s") for this change.' => NULL,
+  'Failed to load external object after collision.' => NULL,
   'Failed to load file ("%s") returned by "%s".' => NULL,
   'Failed to load file object for Git LFS ref "%s"!' => NULL,
   'Failed to load file.' => NULL,
@@ -5349,6 +5240,7 @@ For more detailed output, you can also run manual builds from the command line:
   'Failed to read stdin.' => NULL,
   'Failed to rebuild search index for any documents.' => NULL,
   'Failed to reconnect to master database and release held write lock ("%s") on device "%s" for repository "%s" after trying for %s seconds(s). This repository will be frozen.' => NULL,
+  'Failed to reload commit ("%s") to fetch commit data.' => NULL,
   'Failed to reload lease.' => NULL,
   'Failed to reload object identified by monogram "%s" when querying by PHID.' => NULL,
   'Failed to save image data into any format.' => NULL,
@@ -5475,8 +5367,6 @@ For more detailed output, you can also run manual builds from the command line:
   'First regular expression is invalid!' => NULL,
   'First, download an authenticator application on your phone. Two applications which work well are **Authy** and **Google Authenticator**, but any other TOTP application should also work.' => NULL,
   'Fix Configuration' => NULL,
-  'Fix these schema issues?' => NULL,
-  'Fixing schema issues...' => NULL,
   'Flag %s' => '旗標 %s',
   'Flag Color' => '旗幟顏色',
   'Flag For Later' => '旗標稍後處理',
@@ -5526,15 +5416,15 @@ For more detailed output, you can also run manual builds from the command line:
   'Found %d packages.' => NULL,
   'Found %d text resources.' => NULL,
   'Found %s account(s) to refresh.' => NULL,
+  'Found %s adjustment(s) to apply, detailed above.
+
+You can review adjustments in more detail from the web interface, in Config > Database Status. To better understand the adjustment workflow, see "Managing Storage Adjustments" in the documentation.
+
+MySQL needs to copy table data to make some adjustments, so these migrations may take some time.' => NULL,
   'Found %s affected atoms.' => NULL,
   'Found %s book(s).' => NULL,
   'Found %s file(s) in project.' => NULL,
   'Found %s file(s) to atomize.' => NULL,
-  'Found %s issues(s) with schemata, detailed above.
-
-You can review issues in more detail from the web interface, in Config > Database Status. To better understand the adjustment workflow, see "Managing Storage Adjustments" in the documentation.
-
-MySQL needs to copy table data to make some adjustments, so these migrations may take some time.' => NULL,
   'Found %s modified file(s) (of %s total).' => NULL,
   'Found %s new atom(s) in graph.' => NULL,
   'Found %s obsolete atom(s) in graph.' => NULL,
@@ -5806,6 +5696,7 @@ Do not enable this option if you serve (or plan to ever serve) unsecured content
   'Hide Query' => '隱藏查詢',
   'Hide Search' => '隱藏搜尋',
   'Hide Unappproved Users' => '隱藏未核准的使用者',
+  'Hierarchy' => NULL,
   'High' => '高',
   'High security mode helps protect your account from security threats, like session theft or someone messing with your stuff while you\'re grabbing a coffee. To enter high security mode, confirm your credentials.' => NULL,
   'High-Volume Task Queues' => '大容量工作佇列',
@@ -5958,6 +5849,7 @@ NOTE: URIs are not validated, the URI must return HTTP status 200 within 30 seco
   'If you use a password to login, you\'ll need to reset it before you can login again. You can reset your password by following this link:' => NULL,
   'If you want to import only part of a repository, like `trunk/`, you can set a path in **Import Only**. Phabricator will ignore commits which do not affect this path.' => '如果您只想要匯入檔案庫的一部份，如 `trunk/`，您可以在 **只匯入** Phabricator 將會忽略那些不影響此路徑的提交 (Commit)。',
   'If you\'re using PHPMailer to send email, provide the mailer and options here. PHPMailer is much more enormous than PHPMailerLite, and provides more mailers and greater enormity. You need it when you want to use SMTP instead of sendmail as the mailer.' => NULL,
+  'If your new to Phabricator, these optional steps can help you learn the basics. Conceptually, Phabricator is structured as a graph, and repositories, tasks, and projects are all independent from each other. Feel free to set up Phabricator for how you work best, and explore these features at your own pace.' => NULL,
   'Ignore' => NULL,
   'Ignore All' => '忽略全部',
   'Ignore Conflict' => NULL,
@@ -6281,6 +6173,7 @@ When this query is actually shown in the control, it will look more like this:
   'Join Event' => NULL,
   'Join Policy' => NULL,
   'Join Project' => '加入專案',
+  'Join Room' => NULL,
   'Join a Room' => '加入會議室',
   'Join allowed with edit permission.' => NULL,
   'Join allowed with join permission.' => NULL,
@@ -6288,6 +6181,7 @@ When this query is actually shown in the control, it will look more like this:
   'Join this project? You will become a member and enjoy whatever benefits membership may confer.' => '加入此專案? 您將成為專案的一員並享受團隊所帶來的任何好處。',
   'Join works.' => NULL,
   'Joinable By' => '可加入由',
+  'Joinable Rooms' => NULL,
   'Joined' => '已加入',
   'Joined After' => '加入於之後',
   'Joined Before' => '加入於之前',
@@ -6968,7 +6862,7 @@ For complete instructions on editor configuration, see **[[ %s | %s ]]**.' => '�
   'Monospaced' => '等寬',
   'Monospaced Font' => '等寬字型',
   'Monospaced Textareas' => '等寬文字區塊',
-  'Monospaced font value "%s" is unsafe. You may only enter letters, numbers, spaces, commas, periods, forward slashes and double quotes.' => NULL,
+  'Monospaced font value "%s" is unsafe. You may only enter letters, numbers, spaces, commas, periods, hyphens, forward slashes, and double quotes' => NULL,
   'Month To Date' => '本月至今',
   'Month View' => NULL,
   'Month is out of query range' => NULL,
@@ -7942,6 +7836,7 @@ You can find more information about this mode (and how to configure it) in the M
   'Operation encountered an error while performing repository operations.' => NULL,
   'Operation encountered an error.' => NULL,
   'Operations' => NULL,
+  'Option' => NULL,
   'Option \'%s\' is of type bool, but value is not true or false.' => NULL,
   'Option \'%s\' is of type int, but value is not an integer.' => NULL,
   'Option \'%s\' is of type string, but value is not a string.' => NULL,
@@ -8168,6 +8063,7 @@ You can find more information about this mode (and how to configure it) in the M
   'Partial Upload' => '部份上傳',
   'Partially Audited' => '已部份稽查',
   'Participants' => '參與者',
+  'Participants (%d)' => NULL,
   'Participants in a room can always view it.' => NULL,
   'Participants in this room can take this action.' => NULL,
   'Party' => NULL,
@@ -8355,6 +8251,7 @@ Consider using SSH for authenticated access to repositories instead of HTTP.' =>
   'Phabricator has application policies which can dictate whether users can take certain actions, such as creating new users. 
 
 This setting allows for "locking" these policies such that no further edits can be made on a per-policy basis.' => NULL,
+  'Phabricator has been successfully installed. These next guides will take you through configuration and new user orientation. These steps are optional, and you can go through them in any order. If you want to get back to this guide later on, you can find it in {icon globe} **Applications** under {icon map-o} **Guides**.' => NULL,
   'Phabricator has consistently been unable to reach the writable ("master") database while processing recent requests.' => NULL,
   'Phabricator instance name is required.' => NULL,
   'Phabricator instance name must contain only lowercase letters, digits, and periods.' => NULL,
@@ -8587,6 +8484,7 @@ This option defines a list of netblocks which Phabricator will decline to connec
   'Primitive Security' => NULL,
   'Print the contents of a file.' => NULL,
   'Print the logs for all daemons, or some daemon(s) identified by ID. You can get the ID for a daemon from the Daemon Console in the web interface.' => NULL,
+  'Printable Page' => NULL,
   'Printable Version' => NULL,
   'Prior to Version 0' => NULL,
   'Prior to any content (empty file)' => NULL,
@@ -9652,9 +9550,9 @@ Revision rules can send email, flag revisions, add reviewers, and run build plan
   'Risks/Challenges' => NULL,
   'Role list \'%s\' is not available!' => NULL,
   'Roles' => '身份',
-  'Room' => NULL,
   'Room Actions' => NULL,
   'Room Participants' => '會議室參與者',
+  'Room Preferences' => NULL,
   'Room does not exist or logged in user can not see it.' => NULL,
   'Room title is required.' => NULL,
   'Rooms' => '會議室',
@@ -9799,8 +9697,8 @@ Revision rules can send email, flag revisions, add reviewers, and run build plan
   'Schedule Update' => NULL,
   'Scheduled release of lease "%s".' => NULL,
   'Scheduled release of resource "%s".' => NULL,
-  'Scheduling repository "%s" for an initial update.' => NULL,
   'Scheduling repository "%s" for an update (%s seconds overdue).' => NULL,
+  'Scheduling repository "%s" with an update window of %s second(s). Last update was %s second(s) ago.' => NULL,
   'Schema Status' => '架構狀態',
   'School' => NULL,
   'Scope' => NULL,
@@ -9818,6 +9716,7 @@ Revision rules can send email, flag revisions, add reviewers, and run build plan
   'Search Ngram' => NULL,
   'Search Parent Tasks' => '搜尋父工作',
   'Search Posts' => NULL,
+  'Search Rooms' => NULL,
   'Search Scope' => NULL,
   'Search Subtasks' => '搜尋子工作',
   'Search engine has no blueprint, resource, or lease.' => NULL,
@@ -9882,6 +9781,7 @@ Revision rules can send email, flag revisions, add reviewers, and run build plan
   'See Documentation' => NULL,
   'See More' => NULL,
   'See T2784 - migrating Diffusion working copy calls to conduit methods. Until that task is completed (and possibly after) these methods are unstable.' => NULL,
+  'See all the applications included in Phabricator.' => NULL,
   'See error message for details.' => '查看錯誤訊以取得詳細資訊。',
   'Seen' => NULL,
   'Select' => '選擇',
@@ -10045,6 +9945,7 @@ This is a simple, valid value for the `lint` parameter. It reports one error and
   'Separate date and time inputs, as strings.' => NULL,
   'Separate values with newlines or commas.' => NULL,
   'Separate values with newlines.' => NULL,
+  'Sequence "%s" is invalid for this event: it would occur after the event stops repeating.' => NULL,
   'Serious business' => NULL,
   'Serve repository in read-only mode.' => NULL,
   'Serve repository in read/write mode.' => NULL,
@@ -10140,6 +10041,7 @@ This is a simple, valid value for the `lint` parameter. It reports one error and
   'Share Text Snippets' => '分享文字程式碼片段',
   'Shenanigans' => NULL,
   'Shhh' => NULL,
+  'Shift' => NULL,
   'Shift the object between spaces.' => NULL,
   'Shiny' => NULL,
   'Ship Some Freight' => NULL,
@@ -10372,6 +10274,7 @@ This is a simple, valid value for the `lint` parameter. It reports one error and
   'Skipping, this head is a known commit.' => NULL,
   'Skipping, this is not a commit.' => NULL,
   'Sky' => NULL,
+  'Slack' => NULL,
   'Sleep' => NULL,
   'Sleep for %s seconds.' => NULL,
   'Sleep for a specified number of seconds.' => '睡眠等候一個指定的秒數',
@@ -10810,6 +10713,7 @@ Supplied value: \'%s\'
   'TOTP Synchronization' => NULL,
   'TRUST REVOKED' => NULL,
   'TRUSTED' => '已信任',
+  'Tab' => NULL,
   'Tab %d Name' => '頁籤 %d 名稱',
   'Tab %d Panel' => '頁籤 %d 面板',
   'Tab Panel' => '頁籤面板',
@@ -11035,8 +10939,8 @@ Use %s to start daemons. See %s for more information.' => NULL,
   'The address %s is configured to be used by an application.' => NULL,
   'The address %s is configured to be used by the %s Application.' => NULL,
   'The alias can be no longer than 64 characters.' => NULL,
-  'The alias may only contain letters and numbers.' => NULL,
-  'The alias must contain at least one letter.' => NULL,
+  'The alias you provided (%s) may only contain letters and numbers.' => NULL,
+  'The alias you provided (%s) must contain at least one letter.' => NULL,
   'The application search engine "%s" is not known to Phabricator!' => NULL,
   'The application that created this cart did not finish putting products in it. You can not checkout with an incomplete cart.' => NULL,
   'The associated credential PHID, if one exists.' => NULL,
@@ -12128,7 +12032,6 @@ Requests must include a valid "Host" header.' => NULL,
   'This workboard has been disabled, but can be restored to its former glory.' => NULL,
   'This workflow will generate a new SSH keypair, add the public key, and let you download the private key.' => '這個程序會產生一組新的 SSH keypair，新增一組公鑰並讓您下載私鑰。',
   'Thispropertylabelandpropertyvaluearequitelongandhavenospacestheydemonstratetheoverflowbehavioroftheelementorlackthereof.' => NULL,
-  'Thread' => NULL,
   'Throw Exception' => NULL,
   'Throw an exception.' => '丟出一個例外。',
   'Thu' => NULL,
@@ -12263,6 +12166,15 @@ After completing configuration, copy the **Client ID** and **Client Secret** fro
 You can select whether the provider operates in test mode or accepts live payments using the **Mode** dropdown above.
 
 You can either use `sandbox.paypal.com` to retrieve live credentials, or `paypal.com` to retrieve live credentials.' => NULL,
+  'To configure Slack OAuth, create a new application here:
+
+https://api.slack.com/docs/sign-in-with-slack#create_slack_app
+
+When creating your application, use these settings:
+
+  - **Redirect URI:** Set this to: `%s`
+
+After completing configuration, copy the **Client ID** and **Client Secret** to the fields above. (You may need to generate the client secret by clicking \'New Secret\' first.)' => NULL,
   'To configure Stripe, register or log in to an existing account on [[https://stripe.com | stripe.com]]. Once logged in:
 
   - Go to {nav icon=user, name=Your Account > Account Settings > API Keys}
@@ -12383,6 +12295,7 @@ IMPORTANT: This feature is new, experimental, and not supported. Use it at your 
   'Too much salt.' => NULL,
   'Tooltips' => NULL,
   'Top Navigation' => NULL,
+  'Topic' => NULL,
   'Total' => '總計',
   'Total Chunks' => NULL,
   'Total Cost' => NULL,
@@ -12729,7 +12642,6 @@ If you are confident you have a recent version of "%s" installed and working cor
   'Unable to load binding "%s" to create command interface.' => NULL,
   'Unable to load changeset.' => NULL,
   'Unable to load cluster service.' => NULL,
-  'Unable to load commit data!' => NULL,
   'Unable to load commit data. The data for this task is invalid or no longer exists.' => NULL,
   'Unable to load configuration for this EditEngine ("%s").' => NULL,
   'Unable to load diff "%s".' => NULL,
@@ -12745,7 +12657,6 @@ If you are confident you have a recent version of "%s" installed and working cor
   'Unable to load provider for charge!' => NULL,
   'Unable to load query for transaction object "%s"!' => NULL,
   'Unable to load repository with PHID "%s".' => NULL,
-  'Unable to load repository!' => NULL,
   'Unable to load revision.' => NULL,
   'Unable to load server status: this is not an admin server!' => NULL,
   'Unable to load subscription with PHID "%s".' => NULL,
@@ -12756,7 +12667,6 @@ If you are confident you have a recent version of "%s" installed and working cor
   'Unable to make payment (checkout state is "%s").' => NULL,
   'Unable to make payment: %s' => NULL,
   'Unable to open ZIP.' => NULL,
-  'Unable to open temp files from \'%s\': %s' => NULL,
   'Unable to parse a Releeph field.' => NULL,
   'Unable to parse argument to "%s".' => NULL,
   'Unable to parse date "%s". Use a format like "%s".' => NULL,
@@ -12768,7 +12678,6 @@ If you are confident you have a recent version of "%s" installed and working cor
   'Unable to proxy this SSH request within the cluster: this device is not registered and has a missing device key (expected to find key at "%s").' => NULL,
   'Unable to read device private key while attempting to make authenticated method call within the Phabricator cluster. Use `%s` to register keys for this device. Exception: %s' => NULL,
   'Unable to read device public key while attempting to make authenticated method call within the Phabricator cluster. Use `%s` to register keys for this device. Exception: %s' => NULL,
-  'Unable to read temporary file \'%s\'.' => NULL,
   'Unable to refresh token!' => NULL,
   'Unable to refund charge; no Stripe chargeID!' => NULL,
   'Unable to refund some charges!' => NULL,
@@ -12869,7 +12778,6 @@ If you are confident you have a recent version of "%s" installed and working cor
   'Unknown External' => NULL,
   'Unknown Field: "%s"' => NULL,
   'Unknown HTML renderer "%s"!' => NULL,
-  'Unknown Init Status' => NULL,
   'Unknown Input' => NULL,
   'Unknown Intent (%s)' => NULL,
   'Unknown Javelin Dependency' => NULL,
@@ -13050,6 +12958,9 @@ If you are confident you have a recent version of "%s" installed and working cor
   'Unverified User Email' => NULL,
   'Unwatch Project' => '取消監視專案',
   'Unwatch Project?' => NULL,
+  'Up' => NULL,
+  'Up Left' => NULL,
+  'Up Right' => NULL,
   'Up to Date' => NULL,
   'Upcoming' => '即將來臨',
   'Upcoming Events' => '接下來的事件',
@@ -13091,7 +13002,6 @@ If you are confident you have a recent version of "%s" installed and working cor
   'Updated Before' => '上傳於之前',
   'Updated By' => '上傳由',
   'Updated hint for "%s".' => NULL,
-  'Updated notification settings to "%s".' => NULL,
   'Updated repository "%s".' => NULL,
   'Updated; Phabricator does not trust OAuth client %s.' => NULL,
   'Updated; Phabricator trusts OAuth client %s.' => NULL,
@@ -13190,7 +13100,6 @@ If you are confident you have a recent version of "%s" installed and working cor
   'Use Variable-Width Font' => '使用變寬字型',
   'Use `%s` instead of this option.' => NULL,
   'Use a specific configuration file instead of the default configuration.' => NULL,
-  'Use all our applications, or uninstall the ones you don\'t want.' => NULL,
   'Use default behavior.' => '使用預設行為。',
   'Use either %s or %s and %s to specify the billing range, but not both.' => NULL,
   'Use lowercase letters, digits, and periods. For example: %s' => NULL,
@@ -13531,6 +13440,7 @@ If you provide an instance identifier here (normally by injecting it with a `%s`
   'Welcome' => '歡迎',
   'Welcome to %s' => '歡迎光臨 %s',
   'Welcome to Audit' => NULL,
+  'Welcome to Conpherence' => NULL,
   'Welcome to Phabricator' => '歡迎光臨 Phabricator',
   'Welcome to Phabricator!' => '歡迎光臨 Phabricator!',
   'Welcome to Phabricator!
@@ -13682,6 +13592,7 @@ This can make mail more useful, but some clients have difficulty threading these
   'Without \'%s\', Phabricator can not test for the availability of other binaries.' => NULL,
   'Without \'%s\', Phabricator will not be able to generate or render diffs in multiple applications.' => NULL,
   'Without a configured timezone, PHP will emit warnings when working with dates, and dates and times may not display correctly.' => NULL,
+  'Woe! This request had its journey cut short by unexpected circumstances (%s).' => NULL,
   'Wontfix' => NULL,
   'WordPress.com' => NULL,
   'Wordmark' => NULL,
@@ -14052,10 +13963,6 @@ You should omit the `@` from domains. Note that the domain must match exactly. I
   'You enabled Elasticsearch but the index does not exist.' => NULL,
   'You enabled pygments but the %s script is not actually available, your %s is probably broken.' => NULL,
   'You have %d unpaid invoice(s).' => NULL,
-  'You have \'%s\' configured in your PHP settings, which may cause some features to fail.' => NULL,
-  'You have \'%s\' configured in your PHP settings. Although this setting appears permissive enough that Phabricator will work properly, you may still run into problems because of it.
-
-Consider disabling \'%s\'.' => NULL,
   'You have \'%s\' enabled in your PHP configuration, but Phabricator will not run in safe mode. Safe mode has been deprecated in PHP 5.3 and removed in PHP 5.4.
 
 Disable safe mode to continue.' => NULL,
@@ -14104,6 +14011,7 @@ For more information, see "Managing Storage Adjustments" in the documentation.' 
   'You have not configured any authentication providers yet. You should add a provider (like username/password, LDAP, or GitHub OAuth) so users can register and log in. You can add and configure providers using the Auth Application.' => NULL,
   'You have not created any dashboard panels yet, so you can not add an existing panel.' => '您尚未建立任何資訊看板，因此您無法加入已存在的面板。',
   'You have not initialized the database yet. You must initialize the database before you can adjust schemata. Run `%s` to initialize the database.' => NULL,
+  'You have not joined any rooms yet.' => NULL,
   'You have not moved this object to any columns it is not already in.' => NULL,
   'You have not signed this document yet.' => '您尚未簽署這份文件。',
   'You have not verified the email address for your account (%s). You must verify your email address before you can interact with Phabricator over email.' => NULL,
@@ -14111,7 +14019,6 @@ For more information, see "Managing Storage Adjustments" in the documentation.' 
   'You have permission to create cluster services.' => NULL,
   'You have some unresolved setup issues to take care of.' => NULL,
   'You have successfully configured multi-factor authentication for your account.' => NULL,
-  'You have successfully installed Phabricator. These next guides will take you through configuration and new user orientation. These steps are optional, and you can go through them in any order. If you want to get back to this guide later on, you can find it in the **Config** application under **Welcome Guide**.' => NULL,
   'You have surplus schemata (extra tables or columns which Phabricator does not expect). For information on resolving these issues, see the "Surplus Schemata" section in the "Managing Storage Adjustments" article in the documentation.' => NULL,
   'You haven\'t added any SSH Public Keys.' => '您尚未加入任何 SSH 公鑰。',
   'You haven\'t added any authentication factors to your account yet.' => '您尚未加入任何認証 Factor 到您的帳號。',
@@ -14199,12 +14106,12 @@ For more information, see "Managing Storage Adjustments" in the documentation.' 
   'You must set a name or a name prefix!' => NULL,
   'You must set the %s to render a %s.' => NULL,
   'You must specify a merchant account you control as the recipient of funds from this initiative.' => NULL,
-  'You must specify a message.' => NULL,
   'You must specify a name.' => NULL,
   'You must specify a path prefix to move from with --from.' => NULL,
   'You must specify a path prefix to move to with --to.' => NULL,
   'You must specify a room ID or room PHID to query transactions from.' => NULL,
   'You must specify a room id or room PHID to query transactions from.' => NULL,
+  'You must specify a title.' => NULL,
   'You must specify an account.' => NULL,
   'You must specify data that actually updates the Conpherence.' => NULL,
   'You must specify how much money you want to contribute to the initiative.' => NULL,
@@ -14248,7 +14155,6 @@ e.g.
   'You will no longer be able to use your %s account to log in to Phabricator.' => NULL,
   'You will no longer receive email or notifications about every object associated with this project.' => NULL,
   'You will not be able to rejoin the room on your own, but someone else can invite you later.' => '您將無法自行重新加入此會議室，但其他人之後仍可邀請你。',
-  'You will not be alone on this journey.' => NULL,
   'You will receive mail about changes made to any related object.' => NULL,
   'You will receive mail that is sent to project members.' => '您將會收到寄發給專案成員的郵件。',
   'You\'re It' => NULL,
@@ -14258,9 +14164,9 @@ e.g.
   'You\'ve created at least one dashboard.' => NULL,
   'You\'ve created at least one project.' => NULL,
   'You\'ve created at least one repository.' => NULL,
+  'You\'ve created at least one task.' => NULL,
   'You\'ve resolved (or ignored) all outstanding setup issues.' => NULL,
   'You\'ve set up a real-time notification server.' => NULL,
-  'You\'ve uninstalled any unneeded applications for now.' => NULL,
   'Your \'%s\' client version is \'%d\', which is newer than the server version, \'%d\'. Upgrade your Phabricator install.' => NULL,
   'Your MySQL instance does not support the %s option. You will not be able to find search results for common words. You can gain access to this option by upgrading MySQL to a more recent version.
 
@@ -14342,6 +14248,7 @@ Finally, run this command to rebuild indexes using the new rules:
   'Your configuration fails to specify a server timezone. You can either set the PHP configuration value \'%s\' or the Phabricator configuration value \'%s\' to specify one.' => NULL,
   'Your configured editor URI uses an unsupported protocol. Change your settings to use a supported protocol, or ask your administrator to add support for the chosen protocol by configuring: %s' => NULL,
   'Your install has no current setup issues to resolve.' => NULL,
+  'Your invitations have been accepted. You will not be alone on this journey.' => NULL,
   'Your login session is invalid, and clearing the session cookie was unsuccessful. Try clearing your browser cookies.' => NULL,
   'Your message does not contain any body text or attachments, so Phabricator can not do anything useful with it. Make sure comment text appears at the top of your message: quoted replies, inline text, and signatures are discarded and ignored.' => NULL,
   'Your new password is too short.' => NULL,
@@ -14350,11 +14257,7 @@ Finally, run this command to rebuild indexes using the new rules:
   'Your product should have a simple, descriptive name.' => NULL,
   'Your server is configured with \'%s\', which prevents Phabricator from opening files it requires access to.
 
-Disable this setting to continue.
-
-Failures:
-
-%s' => NULL,
+Disable this setting to continue.' => NULL,
   'Your session is in high security mode. When you finish using it, click here to leave.' => NULL,
   'Your session is no longer in high security.' => NULL,
   'Your tremendous contributions to this project will be sorely missed. Are you sure you want to leave?' => NULL,
@@ -14527,6 +14430,124 @@ You can force daemons to start anyway with %s.' => NULL,
   1 => NULL,
   2 => NULL,
   3 => NULL,
+  '=== Adjust Account Settings ===
+
+You\'ve adjusted at least one setting on your account. To make more adjustments, visit the **[[ %s | Settings Application ]]**.' => '=== 調整帳號設定 ===
+
+您已調整了您的帳號中至少一項設定。要做更多的調整可至 **[[ %s | 設定應用程式 ]]**。',
+  '=== Configure Phabricator Settings ===
+
+You\'ve configured at least one setting from the web interface. To configure more settings later, use the **[[ %s | Config Application ]]**.' => '=== 設定 Phabricator 設定項目 ===
+
+您已從網頁介面設定了至少一項設定項目。往後要設定更多的設定項目可使用 **[[ %s | Config 應用程式 ]]**。',
+  '=== Customize Home Page ===
+
+When you\'re done setting things up, you can create a custom dashboard and install it. Your dashboard will replace this welcome screen on the Phabricator home page. Dashboards can show users the information that\'s most important to your organization. You can configure them to display things like: a custom welcome message, a feed of recent activity, or a list of open tasks, waiting reviews, recent commits, and so on. After you install a default dashboard, it will replace this page. You can find this page later by visiting the **Config** application, under **Welcome Page**. To get started building a dashboard, use the **[[ %s | Dashboards Application ]]**. ' => '=== 自訂首頁 ===
+
+當您完成了以上的設定，您便可以建立一個自訂的資訊面板並安裝該面板。您的資訊面板會取代這個 Phabricator 首頁的歡迎畫面，資訊面板可以將您的組織中最重要的資訊顯示給所有使用者。您可以設定資訊面板顯示如: 一個自訂的歡迎訊息、一個最近活動的清單或一個未完成工作的清單、等候中的審查、最近提交...等等，完成之後您可以安裝該面板為預設的資訊面板，便可以取代這個頁面。往後您可以到 **Config** 應用程式中的 **歡迎頁面** 找到這頁。要開始建立一個資訊面板可使用 **[[ %s | 資訊面板應用程式 ]]**。',
+  '=== Explore Applications ===
+
+Phabricator is a large suite of applications that work together to help you develop software, manage tasks, and communicate. A few of the most commonly used applications are pinned to the left navigation bar by default.
+
+To explore all of the Phabricator applications, adjust settings, or uninstall applications you don\'t plan to use, visit the **[[ %s | Applications Application ]]**. You can also click the **Applications** button in the left navigation menu, or search for an application by name in the main menu bar. ' => '=== 探索應用程式 ===
+
+Phabricator 是一大套應用程式一起運作來協助您開發軟體、管理工作與溝通。有一小部份最常用的應用程式預設已經釘選到左方的導覽列。
+
+要探索所有 Phabricator 的應用程式、調整設定或解除安裝您不計劃使用的應用程式請至 **[[ %s | 應用程式應用程式 ]]**。您也可以點選於左方導覽選單的 **應用程式** 按鈕或在主選單列用名稱搜尋應用程式。',
+  '=== Install Phabricator ===
+
+You have successfully installed Phabricator. This screen will guide you through configuration and orientation. These steps are optional, and you can go through them in any order. If you want to get back to this screen later on, you can find it in the **Config** application under **Welcome Screen**.' => '=== 安裝 Phabricator ===
+
+您已成功安裝了 Phabricator。此畫面會帶領你設定與使用，以下幾個步驟均為選擇性的，您可以用任何順序完成。若您想要在稍後返回這個畫面，您可以在 **Config** 應用程式中的 **歡迎畫面** 找到。',
+  '=== Login and Registration ===
+
+You haven\'t configured any authentication providers yet. Authentication providers allow users to register accounts and log in to Phabricator. You can configure Phabricator to accept credentials like username and password, LDAP, or Google OAuth. You can configure authentication using the **[[ %s | Auth Application ]]**.' => '=== 登入與註冊 ===
+
+You haven\'t configured any authentication providers yet. Authentication providers allow users to register accounts and log in to Phabricator. You can configure Phabricator to accept credentials like username and password, LDAP, or Google OAuth. You can configure authentication using the **[[ %s | Auth Application ]]**.',
+  '=== Login and Registration ===
+
+You\'ve configured at least one authentication provider, so users can register or log in. To configure more providers or adjust settings, use the **[[ %s | Auth Application ]]**.' => '=== 登入與註冊 ===
+
+您已設定了至少一個認証提供者，所以使用者已可以註冊或登入。要設定更多提供者或調整設定可以使用 **[[ %s | 認証應用程式 ]]**。',
+  '=== Quick Start: Bugs and Tasks ===
+
+Track bugs and tasks in Phabricator with **[[ %s | Maniphest ]]**. Users in all roles can use Maniphest to manage current and planned work and to track bugs and issues. To get started with bugs and tasks:
+
+  - **[[ %s | Create a Task ]]**
+  - **[[ %s | View All Tasks ]]**
+' => '=== 快速入門: 問題與工作 ===
+
+在 Phabricator 可使用 **[[ %s | Maniphest ]]** 來追蹤問題與工作。所有身份的使用者都可以使用 Maniphest 來管理目前及計劃中的工作並且追蹤錯誤與問題的處理狀況。要開始處理問題與工作:
+
+  - **[[ %s | 建立一個工作 ]]**
+  - **[[ %s | 檢視所有工作 ]]**
+',
+  '=== Quick Start: Code Review ===
+
+Review code with **[[ %s | Differential ]]**. Engineers can use Differential to share, review, and approve changes to source code. To get started with code review:
+
+  - **[[ %s | Create a Revision ]]** //(Copy and paste a diff from     the command line into the web UI to quickly get a feel for     review.)//
+  - **[[ %s | View All Revisions ]]**
+
+For more information, see these articles in the documentation:
+
+  - **[[ %s | Differential User Guide ]]**, for a general overview     of Differential.
+  - **[[ %s | User Guide: Review vs Audit ]]**, for a discussion     of different code review workflows.' => '=== 快速入門: 程式碼審查 ===
+
+使用 **[[ %s | Differential ]]** 來審查程式碼，工程師可以使用 Differential 來分享、審查並核准對原始碼的更改。要開始使用程式碼審查:
+
+  - **[[ %s | 建立一個修訂 ]]** //(可從指令列複製並貼上 diff 到網頁介面來試試審查。)//
+  - **[[ %s | 檢視所有修訂 ]]**
+
+要取得更多資訊，請參考以下說明文件中的文章:
+
+  - **[[ %s | Differential 使用者指南 ]]**, 有關 Differential 的簡介。
+  - **[[ %s | 使用者指南: 審查與稽查 ]]**, 探討有關兩種不同的程式碼審查流程。',
+  '=== Quick Start: Design Review ===
+
+Review proposed designs with **[[ %s | Pholio ]]**. Designers can use Pholio to share images of what they\'re working on and show off things they\'ve made. To get started with design review:
+
+  - **[[ %s | Create a Mock ]]**
+  - **[[ %s | View All Mocks ]]**' => '=== 快速入門: 設計審查 ===
+
+使用 **[[ %s | Pholio ]]** 可以審查設計提案。設計師可以使用 Pholio 分享他們正在設計的圖片並展示所有他們的設計。要開始使用設計審查:
+
+  - **[[ %s | 建立模型 ]]**
+  - **[[ %s | 檢視所有模型 ]]**',
+  '=== Quick Start: Repositories ===
+
+Manage and browse source code repositories with **[[ %s | Diffusion ]]**. Engineers can use Diffusion to browse and audit source code. You can configure Phabricator to host repositories, or have it track existing repositories hosted elsewhere (like GitHub, Bitbucket, or an internal server). To get started with repositories:
+
+  - **[[ %s | Create a New Repository ]]**
+  - **[[ %s | View All Repositories ]]**
+
+For more information, see these articles in the documentation:
+
+  - **[[ %s | Diffusion User Guide ]]**, for a general overview of     Diffusion.
+  - **[[ %s | Diffusion User Guide: Repository Hosting ]]**,     for instructions on configuring repository hosting.
+
+Phabricator supports Git, Mercurial and Subversion.' => '=== 快速入門: 檔案庫 ===
+
+使用 **[[ %s | Diffusion ]]** 可以管理與瀏覽原始碼。工程師可以使用 Diffusion 來瀏覽並稽查原始碼，您可以設定 Phabricator 來代管檔案庫，或者讓 Phabricator 追蹤一個由其他地方代管的既有檔案庫 (例如 GitHub, Bitbucket, 或者內部伺服器)。要開始使用檔案庫:
+
+  - **[[ %s | 建立新檔案庫 ]]**
+  - **[[ %s | 檢視所有檔案庫 ]]**
+
+要取得更多資訊，可參考以下說明文件中的文章:
+
+  - **[[ %s | Diffusion 使用者指南 ]]**, 有關 Diffusion 的簡介。
+  - **[[ %s | Diffusion 使用者指南: 檔案庫代管 ]]**, 有關設定檔案庫代管的操作說明。
+
+Phabricator 支援 Git, Mercurial 以及 Subversion。',
+  '=== Resolve Setup Issues ===
+
+You have some unresolved setup issues to take care of. Click the link in the yellow banner at the top of the screen to see them, or find them in the **Config** application under **[[ %s | Setup Issues ]]**. Although most setup issues should be resolved, sometimes an issue is not applicable to an install. If you don\'t intend to fix a setup issue (or don\'t want to fix it for now), you can use the "Ignore" action to mark it as something you don\'t plan to deal with.' => '=== 解決安裝問題 ===
+
+您有一些未解決的安裝問題要處理。請點選螢幕上方的黃色橫幅中的連結來查看，或者在 **Config** 應用式中的 **[[ %s | 安裝問題 ]]** 找到。雖然大部份的安裝問題應該要解決，但是可能會有一些無法在您安裝的版本上解決的問題，若您並不打算修復某個安裝問題 (或者想要稍後再解決)，您可以將您不打算處理的問題以 "忽略" 動作來標記。',
+  '=Explore Phabricator' => '=探索 Phabricator',
+  '=Quick Start Guide' => '=快速入門指南',
+  '=Setup and Configuration' => '=安裝與設定',
+  'Configure Applications' => '設定應用程式',
   '(Detect From Filename in Title)' => '(使用標題的檔名字稱辨識)',
   'Cluster Notification Status' => '叢集通知狀態',
   'Configure Harbormaster build engine.' => '設定 Harbormaster 編譯引擎。',
