@@ -264,3 +264,4 @@ Commandeer               | 徵用, 徵用修訂|
 Resign                   | 放棄          | 放棄審查
 Parent Task/Subtask      | 父工作/子工作 | 工作
 Publisher                | 發行人        | 套件發行人
+Favorite                 | 我的最愛      | 自訂選單項目
