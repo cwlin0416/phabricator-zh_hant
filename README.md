@@ -252,7 +252,7 @@ Contributor              | 貢獻者        | 協議貢獻者
 Signed                   | 簽署          | 簽署協議 
 Flag, Flagged            | 旗幟, 旗標    | n. 旗幟, v. 旗標
 Initiatives              | 提案          | Fund Initiatives
-Blog                     | 部落格        | Phame Blog
+Blog                     | 網誌         | Phame Blog
 Post                     | 文章          | Phame Post
 Paste                    | 剪貼簿        |
 Passphrase               | 暗號          |
@@ -265,3 +265,4 @@ Resign                   | 放棄          | 放棄審查
 Parent Task/Subtask      | 父工作/子工作 | 工作
 Publisher                | 發行人        | 套件發行人
 Favorite                 | 我的最愛      | 自訂選單項目
+Assignee                 | 受託人        | 工作的受託人
