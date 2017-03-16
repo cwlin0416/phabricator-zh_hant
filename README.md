@@ -208,10 +208,13 @@ service phd start
 ### 產生語系資源
 
 #### 新版
+新版的 Phabricator 不會直接輸出 PHP 格式，且所產生的語系資源改使用 json 格式儲存於 Phabricator 目錄下的 `/src/.cache/i18n_strings.json`
 使用指令擷取目前程式中可翻譯的字串
 `cd /usr/local/lib/php/ && phabricator/bin/i18n extract`
-新版的 Phabricator 不會直接輸出 PHP 格式，且所產生的語系資源改使用 json 格式儲存於 Phabricator 目錄下的 `/src/.cache/i18n_strings.json`
-使用 `extract_trans.sh` 將 `/src/.cache/i18n_strings.json` 的翻譯轉換為 PHP Class
+接著使本檔案庫所附的用將 `/src/.cache/i18n_strings.json` 的翻譯轉換與舊的翻譯合併為 PHP Class
+`php -f parseI18nStrings.php /usr/local/lib/php/phabricator/src/.cache/i18n_strings.json > PhabricatorTradChineseTranslation.php.new`
+
+所有動作執行 `extract.sh` 便可完成，執行前要先確認 i18n_strings.json 的檔案路徑是否正確
 
 #### 舊版
 請使用指令擷取目前程式碼中可翻譯的字串
