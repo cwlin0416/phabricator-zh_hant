@@ -43,17 +43,17 @@ function getBelongApp($uses) {
 	$appStat = array_count_values($appNames); 
 	arsort($appStat);
 	$mostApp = array_keys($appStat)[0];
+	
+	if( count($appStat) > 2) {
+		$mostApp = 'common';
+	}
 	return $mostApp;
 }
 $categoryStrings = array();
 $categoryStrings['common'] = array();
 foreach($strings as $string => $uses) {
 	$category = null;
-	if( count($uses->uses) > 2 ) {
-		$category = 'common';
-	} else {
-		$category = getBelongApp($uses->uses);
-	}
+	$category = getBelongApp($uses->uses);
 	$categoryStrings[$category][$string] = null;
 	if( !empty($transStrings[$string])) {
 		$categoryStrings[$category][$string] = $transStrings[$string];
