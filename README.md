@@ -124,7 +124,7 @@ git clone https://github.com/cwlin0416/phabricator-zh_hant.git
            return $singular;
 ```
 
-##升級 Phabricator
+## 升級 Phabricator
 https://secure.phabricator.com/book/phabricator/article/upgrading/
 
 升級 Phabricator 必須使用 Github 上的檔案庫, 因此 FreeBSD 採用 Ports 安裝的使用者需自行將安裝的 phabricator/, arcanist/, libphutil/ 三個目錄替換為 git 的版本。
@@ -209,9 +209,13 @@ service phd start
 
 #### 新版
 新版的 Phabricator 不會直接輸出 PHP 格式，且所產生的語系資源改使用 json 格式儲存於 Phabricator 目錄下的 `/src/.cache/i18n_strings.json`
+
 使用指令擷取目前程式中可翻譯的字串
+
 `cd /usr/local/lib/php/ && phabricator/bin/i18n extract`
+
 接著使本檔案庫所附的用將 `/src/.cache/i18n_strings.json` 的翻譯轉換與舊的翻譯合併為 PHP Class
+
 `php -f parseI18nStrings.php /usr/local/lib/php/phabricator/src/.cache/i18n_strings.json > PhabricatorTradChineseTranslation.php.new`
 
 所有動作執行 `extract.sh` 便可完成，執行前要先確認 i18n_strings.json 的檔案路徑是否正確
