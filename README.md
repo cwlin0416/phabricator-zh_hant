@@ -203,9 +203,17 @@ service phd start
 # $ROOT/phabricator/bin/aphlict start
 ```
 
-##製作 Phabricator 語系
+## 製作 Phabricator 語系
 
 ### 產生語系資源
+
+#### 新版
+使用指令擷取目前程式中可翻譯的字串
+`cd /usr/local/lib/php/ && phabricator/bin/i18n extract`
+新版的 Phabricator 不會直接輸出 PHP 格式，且所產生的語系資源改使用 json 格式儲存於 Phabricator 目錄下的 `/src/.cache/i18n_strings.json`
+使用 `extract_trans.sh` 將 `/src/.cache/i18n_strings.json` 的翻譯轉換為 PHP Class
+
+#### 舊版
 請使用指令擷取目前程式碼中可翻譯的字串
 `./phabricator/bin/i18n extract ./phabricator/src > extractStrings`
 擷取完之後將該字串依語系擴充套件的 API 文件放到新語系類別的 getTranslations() 函數中
