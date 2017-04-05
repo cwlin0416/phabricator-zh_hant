@@ -59,8 +59,10 @@ foreach($strings as $string => $uses) {
 		$categoryStrings[$category][$string] = $transStrings[$string];
 		unset($transStrings[$string]);
 	}
+	ksort($categoryStrings[$category]);
 }
 $categoryStrings['unused'] = $transStrings;
+ksort($categoryStrings);
 echo "array (\n";
 foreach($categoryStrings as $category => $strings) {
 	$lineWidth = 75;
