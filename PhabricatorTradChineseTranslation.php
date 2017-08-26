@@ -11623,7 +11623,6 @@ After you have set a password, you can login in the future by going here:
   'Upload New Header' => NULL,
   'Users who can edit a blog can always view it.' => NULL,
   'View Live' => NULL,
-  'Views' => NULL,
   'Visibility' => NULL,
   'Wherever you go, there you are.' => NULL,
   'Write Post' => NULL,
