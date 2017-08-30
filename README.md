@@ -281,3 +281,8 @@ Parent Task/Subtask      | 父工作/子工作 | 工作
 Publisher                | 發行人        | 套件發行人
 Favorite                 | 我的最愛      | 自訂選單項目
 Assignee                 | 受託人        | 工作的受託人
+dependent revision        |         | Differential
+Blocking                 |  阻擋      | Differential
+blocking reviewer        |  阻擋審查員       | Differential
+Changeset            |         | Differential
+patches           |         | Differential
