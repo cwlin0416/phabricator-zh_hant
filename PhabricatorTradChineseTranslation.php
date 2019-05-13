@@ -17949,7 +17949,7 @@ After you have set a password, you can login in the future by going here:
   'Repository name is required.' => '檔案庫名稱為必填。',
   '(Restricted/Invalid Dashboard)' => '(受限制/無效的資訊看板)',
   'Fulltext search.' => '全文搜尋。',
-  'Adding an additional authentication factor improves the security of your account. Choose the type of factor to add:' => '加入額外的認證方式來增進您的帳號安全性，請選擇您要加入的 Factor 類型:',
+  'Adding an additional authentication factor improves the security of your account. Choose the type of factor to add:' => '加入額外的認證方式來增進您的帳號安全性，請選擇您要加入的認證方式類型:',
   'Edit Settings (%s)' => '編輯設定 (%s)',
   'Phabricator can send real-time notifications to your web browser or to your desktop. Select where you\'d want to receive these real-time updates.' => 'Phabricator 會發送即時通知到您的網頁瀏覽器或您的桌面，選擇您想要收到這些即時通知的地方。',
   'Unknown Account ("%s")' => '不明帳號 ("%s")',
