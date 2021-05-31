@@ -6508,7 +6508,7 @@ This repository ("%s") is configured with a touched files limit that caps the ma
   'Commit Actions' => '提交動作',
   'Commit Author' => '提交作者',
   'Commit Autocloses (Deprecated)' => NULL,
-  'Commit Date' => NULL,
+  'Commit Date' => '提交日期',
   'Commit Date (Newest First)' => '提交日期 (新的在前)',
   'Commit Date (Oldest First)' => '提交日期 (舊的在前)',
   'Commit Detail' => '提交詳細資料',
