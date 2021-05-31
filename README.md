@@ -286,3 +286,13 @@ Blocking                 |  阻擋      | Differential
 blocking reviewer        |  阻擋審查員       | Differential
 Changeset            |         | Differential
 patches           |         | Differential
+
+## 已知問題
+由於 arcanist 會去解析 Commit 訊息，因此 `Differential Revision` 訊息翻譯會導致 arcanist 無法正常執行
+
+問題詳見:
+https://github.com/phacility/arcanist/blob/master/src/differential/ArcanistDifferentialCommitMessage.php#L119
+
+```
+  'Differential Revision' => NULL, //'Differential 修訂', @TODO 會導致 arcanist 無法正常使用
+```
